@@ -1,0 +1,16 @@
+{
+  "name": "commander-bench",
+  "version": "0.0.1",
+  "author": {
+    "name": "Rijnhard Hessel",
+    "email": "r.hessel.git@gmail.com"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "bin": {
+    "commander-bench": "index.js"
+  },
+  "dependencies": {
+    "commander": "*"
+  }
+}

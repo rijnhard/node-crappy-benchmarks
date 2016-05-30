@@ -1,0 +1,16 @@
+{
+  "name": "yargs-bench",
+  "version": "0.0.1",
+  "author": {
+    "name": "Rijnhard Hessel",
+    "email": "r.hessel.git@gmail.com"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "bin": {
+    "yargs-bench": "index.js"
+  },
+  "dependencies": {
+    "yargs": "*"
+  }
+}
