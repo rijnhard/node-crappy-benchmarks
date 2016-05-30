@@ -11,8 +11,7 @@
 ## [Convict](https://www.npmjs.com/package/convict)
 
 - Crappy dependencies on `optimist` (deprecated predecessor to yargs, which is slow)
-    - optimist was dropped for minimist [17 May 2016](https://github.com/mozilla/node-convict/issues/149)
-
+    - optimist was dropped for minimist [v1.4.0](https://github.com/mozilla/node-convict/issues/149)
 
 # References
 
