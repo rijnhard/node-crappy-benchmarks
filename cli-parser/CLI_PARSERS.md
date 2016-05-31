@@ -20,25 +20,23 @@
 - more complex to write commands (more procedural)
 - slightly slower then Commander
 
-### [WIP] command-line-*
-
-Comprised of (in order to match functionality):
-- [command-line-args](https://www.npmjs.com/package/command-line-args)
-- [command-line-usage](https://www.npmjs.com/package/command-line-usage)
-- [command-line-commands](https://www.npmjs.com/package/command-line-commands)
-
-Still in progress
-
 ## Test Criteria
 
 - a globally installed CLI command on the latest official `node:4` docker container
 - 1 subcommand (git style)
-- 2 required parameters
-- 1 trailing variadic parameter where we inject 3 parameters and only use 2
+- 2 required integer parameters
+- 1 trailing variadic integer parameter where we inject 3 parameters and only use 2
 - one option `-s` alias `--start` with a default of 0 and specified as 10 during the test.
 - must have `-h` alias `--help` with generated usage docs.
 
-# Issues
+## Issues
 
-What about minimal CLI parsers? like [minimist](https://www.npmjs.com/package/minimist)
+### What about minimal parsers?
+
+[minimist](https://www.npmjs.com/package/minimist)
+and [command-line-args](https://www.npmjs.com/package/command-line-args).
+Even with additional help like
+[command-line-usage](https://www.npmjs.com/package/command-line-usage)
+and [command-line-commands](https://www.npmjs.com/package/command-line-commands)
+it's still not flexible enough to get the test case without a lot of custom code.
 
