@@ -14,6 +14,12 @@
 - more complex to write commands
 - slow
 
+### [argparse](https://www.npmjs.com/package/argparse)
+
+- ported from a python library
+- more complex to write commands (more procedural)
+- slightly slower then Commander
+
 ### [WIP] command-line-*
 
 Comprised of (in order to match functionality):
@@ -23,7 +29,7 @@ Comprised of (in order to match functionality):
 
 Still in progress
 
-### Test Criteria
+## Test Criteria
 
 - a globally installed CLI command on the latest official `node:4` docker container
 - 1 subcommand (git style)

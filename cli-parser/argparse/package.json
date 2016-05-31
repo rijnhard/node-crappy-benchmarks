@@ -1,0 +1,16 @@
+{
+  "name": "argparse-bench",
+  "version": "0.0.1",
+  "author": {
+    "name": "Rijnhard Hessel",
+    "email": "r.hessel.git@gmail.com"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "bin": {
+    "argparse-bench": "index.js"
+  },
+  "dependencies": {
+    "argparse": "^1.0.7"
+  }
+}

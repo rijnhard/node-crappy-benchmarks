@@ -17,6 +17,7 @@ and every single one should be given credit for the effort they spend on these l
 1000 iterations of `x-bench add -s 10 1 3 5 7 11`:
 - [Yargs](https://www.npmjs.com/package/yargs): `123 sec,  123680 millis`
 - [Commander](https://www.npmjs.com/package/commander): `46 sec,  46648 millis`
+- [argparse](https://www.npmjs.com/package/argparse): `57 sec,  57982 millis`
 
 [More details](cli-parser/CLI_PARSERS.md)
 

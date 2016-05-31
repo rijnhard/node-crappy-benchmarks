@@ -3,7 +3,7 @@
 ## [Nconf](https://www.npmjs.com/package/nconf)
 
 - Crappy dependencies on `yargs` and `ini`
-    - not modular enough, you shouldnt need `yargs` if you arent going to allow cli parameters.
+    - not modular enough, you shouldn't need `yargs` if you aren't going to allow cli parameters.
      (lazy loading can make this a moot point, but still its another dependency thats downloaded)
     - yargs is pretty slow at the moment
     - `ini` is fine on its own, but if the the results aren't cached then the ini file is reparsed every time, and that is slow.
