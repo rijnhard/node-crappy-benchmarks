@@ -4,23 +4,23 @@ services:
     commander:
         image: node:4
         volumes:
-            - ../cli-parsers/commander/:/data:ro
+            - ../cli-parser/commander/:/data:rw
             - ../bench/:/bench:ro
             - ../results/:/results:rw
-        command: ["./bench/install_then_run_no_progress.sh", "-n", "1000", "-o", "commander-bench", "-c", "commander-bench add -s 10 1 3 5 7 11"]
+        command: ["/bench/benchmark_no_progress.sh", "-n", "1000", "-o", "commander-bench", "-c", "commander-bench add -s 10 1 3 5 7 11"]
 
     yargs:
         image: node:4
         volumes:
-            - ../cli-parsers/yargs/:/data:ro
+            - ../cli-parser/yargs/:/data:rw
             - ../bench/:/bench:ro
             - ../results/:/results:rw
-        command: ["./bench/install_then_run_no_progress.sh", "-n", "1000", "-o", "yargs-bench", "-c", "yargs-bench add -s 10 1 3 5 7 11"]
+        command: ["/bench/benchmark_no_progress.sh", "-n", "1000", "-o", "yargs-bench", "-c", "yargs-bench add -s 10 1 3 5 7 11"]
 
     argparse:
         image: node:4
         volumes:
-            - ../cli-parsers/argparse/:/data:ro
+            - ../cli-parser/argparse/:/data:rw
             - ../bench/:/bench:ro
             - ../results/:/results:rw
-        command: ["./bench/install_then_run_no_progress.sh", "-n", "1000", "-o", "argparse-bench", "-c", "argparse-bench add -s 10 1 3 5 7 11"]
+        command: ["/bench/benchmark_no_progress.sh", "-n", "1000", "-o", "argparse-bench", "-c", "'argparse-bench add -s 10 1 3 5 7 11'"]
