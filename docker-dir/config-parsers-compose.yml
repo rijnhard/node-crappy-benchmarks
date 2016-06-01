@@ -1,0 +1,26 @@
+version: '2'
+
+services:
+    nconf:
+        image: node:4
+        working_dir: /data
+        volumes:
+            - ../config-parser/nconf/:/data:rw
+            - ../bench/:/bench:ro
+            - ../results/:/results:rw
+            - ../config-parser/config-dir/:/config-dir:ro
+        env_file:
+            - ../config-parser/config-dir/.env
+        command: ["/bench/benchmark_no_progress.sh", "-n", "1000", "-o", "nconf-bench", "-c", "nconf-bench -c 19 -d 23"]
+
+    convict:
+        image: node:4
+        working_dir: /data
+        volumes:
+            - ../config-parser/convict/:/data:rw
+            - ../bench/:/bench:ro
+            - ../results/:/results:rw
+            - ../config-parser/config-dir/:/config-dir:ro
+        env_file:
+            - ../config-parser/config-dir/.env
+        command: ["/bench/benchmark_no_progress.sh", "-n", "1000", "-o", "convict-bench", "-c", "convict-bench -c 19 -d 23"]

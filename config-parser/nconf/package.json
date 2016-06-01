@@ -1,0 +1,17 @@
+{
+  "name": "nconf-bench",
+  "version": "0.0.1",
+  "author": {
+    "name": "Rijnhard Hessel",
+    "email": "r.hessel.git@gmail.com"
+  },
+  "license": "MIT",
+  "main": "test1.js",
+  "bin": {
+    "nconf-bench1": "test1.js",
+    "nconf-bench2": "test2.js"
+  },
+  "dependencies": {
+    "nconf": "*"
+  }
+}

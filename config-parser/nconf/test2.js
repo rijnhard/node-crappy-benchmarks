@@ -28,21 +28,8 @@ function test() {
  ******************************************************/
 
 nconf
-    .argv({
-        "c" : {
-            demand: true,
-            nargs: 1,
-            type: 'number'
-        },
-        "d" : {
-            demand: true,
-            nargs: 1,
-            type: 'number'
-        }
-    })
     .file('user', '../config-dir/config.json')
     .file('system', '../config-dir/system.json')
-    .env(['a', 'b', 'c', 'd', 'e'])
     .defaults({
         a: 0,
         b: 0,
