@@ -12,8 +12,16 @@ and every single one should be given credit for the effort they spend on these l
 
 ## Results
 
-Category | Candidate | Test No. | Iterations | Time
-_________ | _________ | _________ | _________ | _________
+| Category | Candidate | Test No. | Iterations | Sec | Millis |
+| -------- | -------- | -------- | -------- | -------- | -------- |
+| CLI | Yargs | 1 | 1000 | `123 sec` | `123680 millis` |
+| CLI | Commander | 1 | 1000 | `46 sec` | `46648 millis` |
+| CLI | argparse | 1 | 1000 | `57 sec` | `57982 millis` |
+| Config | Convict | 1 | 1000 | `89 sec` | `89192 millis` |
+| Config | Convict | 2 | 1000 | `88 sec` | `88116 millis` |
+| Config | Nconf | 1 | 1000 | `109 sec` | `109839 millis` |
+| Config | Nconf | 2 | 1000 | `72 sec` | `72314 millis` |
+
 
 ### CLI parsers
 
@@ -38,7 +46,7 @@ Run `docker-compose -f docker-dir/cli-parsers-compose.yml`
 
 [More details](config-parser/CONFIG_PARSERS.md)
 
-Run `docker-compose -f docker-dir/cli-parsers-compose.yml`
+Run `docker-compose -f docker-dir/config-parsers-compose.yml`
 
 # Improvements
 
