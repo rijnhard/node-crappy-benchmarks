@@ -12,14 +12,31 @@ and every single one should be given credit for the effort they spend on these l
 
 ## Results
 
+Category | Candidate | Test No. | Iterations | Time
+_________ | _________ | _________ | _________ | _________
+
 ### CLI parsers
 
-1000 iterations of `x-bench add -s 10 1 3 5 7 11`:
+1000 iterations of `<candidate>-bench add -s 10 1 3 5 7 11`:
 - [Yargs](https://www.npmjs.com/package/yargs): `123 sec,  123680 millis`
 - [Commander](https://www.npmjs.com/package/commander): `46 sec,  46648 millis`
 - [argparse](https://www.npmjs.com/package/argparse): `57 sec,  57982 millis`
 
 [More details](cli-parser/CLI_PARSERS.md)
+
+Run `docker-compose -f docker-dir/cli-parsers-compose.yml`
+
+### Config parsers
+
+1000 iterations of `<candidate>-bench<testNumber> -c 19 -d 23`:
+- [Convict](https://www.npmjs.com/package/convict):
+    - Test 1: Multiple files, with env and CLI override: `89 sec,  89192 millis`
+    - Test 2: Multiple files, no env, CLI override: `88 sec,  88116 millis`
+- [Nconf](https://www.npmjs.com/package/nconf):
+    - Test 1: Multiple files, with env and CLI override: `109 sec,  109839 millis`
+    - Test 2: Multiple files, no env, CLI override: `72 sec,  72314 millis`
+
+[More details](config-parser/CONFIG_PARSERS.md)
 
 Run `docker-compose -f docker-dir/cli-parsers-compose.yml`
 
