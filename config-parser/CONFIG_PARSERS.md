@@ -71,7 +71,7 @@
 
 Both are pretty equivalent with nconf without CLI commands being the fastest,
 and if CLI commands are used nconf is the slowestr, but that is yargs parser
-(which they are investigating on improving).
+(which [they are investigating on improving](https://github.com/yargs/yargs/issues/521#issuecomment-222867158)).
 Convict is unaffected/consistent no matter on CLI commands.
 
 ## References
