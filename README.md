@@ -39,10 +39,10 @@ Run `docker-compose -f docker-dir/cli-parsers-compose.yml`
 1000 iterations of `<candidate>-bench<testNumber> -c 19 -d 23`:
 - [Convict](https://www.npmjs.com/package/convict):
     - Test 1: Multiple files, with env and CLI override: `89 sec,  89192 millis`
-    - Test 2: Multiple files, no env, CLI override: `88 sec,  88116 millis`
+    - Test 2: Multiple files, no env or CLI override: `88 sec,  88116 millis`
 - [Nconf](https://www.npmjs.com/package/nconf):
     - Test 1: Multiple files, with env and CLI override: `109 sec,  109839 millis`
-    - Test 2: Multiple files, no env, CLI override: `72 sec,  72314 millis`
+    - Test 2: Multiple files, no env or CLI override: `72 sec,  72314 millis`
 
 [More details](config-parser/CONFIG_PARSERS.md)
 

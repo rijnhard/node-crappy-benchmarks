@@ -47,7 +47,7 @@
     - e: 99
     - Total = 153
 
-### Test 2: Multiple files, no env, CLI override
+### Test 2: Multiple files, no env or CLI override
 
 - a globally installed CLI command on the latest official node:4 docker container
 - use 2 configurations
