@@ -4,7 +4,7 @@ services:
     commander:
         image: node:4
         volumes:
-            - ../cli-parser/commander/:/data:rw
+            - ../cli-parser/commander/:/data:ro
             - ../bench/:/bench:ro
             - ../results/:/results:rw
         command: ["/bench/benchmark_no_progress.sh", "-n", "1000", "-o", "commander-bench", "-c", "commander-bench add -s 10 1 3 5 7 11"]
@@ -12,7 +12,7 @@ services:
     yargs:
         image: node:4
         volumes:
-            - ../cli-parser/yargs/:/data:rw
+            - ../cli-parser/yargs/:/data:ro
             - ../bench/:/bench:ro
             - ../results/:/results:rw
         command: ["/bench/benchmark_no_progress.sh", "-n", "1000", "-o", "yargs-bench", "-c", "yargs-bench add -s 10 1 3 5 7 11"]
@@ -20,7 +20,7 @@ services:
     argparse:
         image: node:4
         volumes:
-            - ../cli-parser/argparse/:/data:rw
+            - ../cli-parser/argparse/:/data:ro
             - ../bench/:/bench:ro
             - ../results/:/results:rw
         command: ["/bench/benchmark_no_progress.sh", "-n", "1000", "-o", "argparse-bench", "-c", "argparse-bench add -s 10 1 3 5 7 11"]
