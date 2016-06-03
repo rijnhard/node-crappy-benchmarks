@@ -40,3 +40,4 @@ Even with additional help like
 and [command-line-commands](https://www.npmjs.com/package/command-line-commands)
 it's still not flexible enough to get the test case without a lot of custom code.
 
+- may be able to use meow and minimist in combination

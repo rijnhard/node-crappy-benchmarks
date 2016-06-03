@@ -54,3 +54,4 @@ Run `docker-compose -f docker-dir/config-parsers-compose.yml`
 It's unfair to criticize a libraries performance
 based on how it operates on an old version of a language,
 when it could very well leverage new functionality in newer versions.
+- add run commands for non docker-compose.
